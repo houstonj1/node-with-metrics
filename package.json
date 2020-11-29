@@ -1,0 +1,10 @@
+{
+  "name": "node-with-metrics",
+  "version": "0.0.0",
+  "description": "Node with Metrics",
+  "main": "index.js",
+  "repository": "https://github.com/houstonj1/node-with-metrics",
+  "author": "James Houston <houston.jimmy2@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
