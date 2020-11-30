@@ -22,6 +22,8 @@ jobs:
           node-version: '14'
       - name: Install Dependencies
         run: yarn install
+      - name: Run Tests
+        run: yarn test
       - name: Release
         run: npx semantic-release
         env:
