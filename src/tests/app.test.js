@@ -14,3 +14,10 @@ describe('/version', () => {
         expect(response.body.version).toBe(VERSION)
     })
 })
+
+describe('/metrics', () => {
+    test("It should respond with a 200", async () => {
+        const response = await request(app).get('/metrics')
+        expect(response.statusCode).toBe(200)
+    })
+})
