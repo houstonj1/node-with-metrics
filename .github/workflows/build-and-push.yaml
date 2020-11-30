@@ -22,13 +22,13 @@ jobs:
           node-version: '14'
       - name: Install Dependencies
         run: yarn install
+      - name: Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Docker Build
         run: |
           docker pull houstonj1/node-with-metrics:latest
           docker build --pull --cache-from houstonj1/node-with-metrics:latest -t houstonj1/node-with-metrics:latest .
       - name: Docker Push
         run: docker push houstonj1/node-with-metrics:latest
-      - name: Release
-        run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
