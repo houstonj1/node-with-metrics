@@ -1,0 +1,10 @@
+branches:
+  - main
+  - name: '!(main)*'
+    prerelease: true
+repositoryUrl: "git@github.com:houstonj1/node-with-metrics.git"
+plugins:
+  - "@semantic-release/commit-analyzer"
+  - "@semantic-release/release-notes-generator"
+  - "@semantic-release/git"
+  - "@semantic-release/github"

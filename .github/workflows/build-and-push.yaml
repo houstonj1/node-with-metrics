@@ -17,6 +17,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Docker Build
-        run: docker build -t houstonj1/node-with-metrics:latest .
+        run: |
+          docker pull houstonj1/node-with-metrics:latest
+          docker build --pull --cache-from houstonj1/node-with-metrics:latest -t houstonj1/node-with-metrics:latest .
       - name: Docker Push
         run: docker push houstonj1/node-with-metrics:latest
+      - name: Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
