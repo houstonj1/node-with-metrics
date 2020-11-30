@@ -16,10 +16,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and Push
-        uses: docker/build-push-action@v2
-        with:
-          pull: true
-          tags: houstonj1/node-with-metrics:latest
-      
-
+      - name: Docker Build
+        run: docker build -t houstonj1/node-with-metrics:latest .
+      - name: Docker Push
+        run: docker push houstonj1/node-with-metrics:latest
