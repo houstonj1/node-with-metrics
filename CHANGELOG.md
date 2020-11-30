@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/houstonj1/node-with-metrics/compare/v1.3.1...v1.3.2) (2020-11-30)
+
+
+### Bug Fixes
+
+* **build:** Copy src into the Dockerfile ([0eb9d3c](https://github.com/houstonj1/node-with-metrics/commit/0eb9d3ce8f5d86ca8a5fe24077981c4a8fcb8cd9))
+
 ## [1.3.1](https://github.com/houstonj1/node-with-metrics/compare/v1.3.0...v1.3.1) (2020-11-30)
 
 # [1.3.0](https://github.com/houstonj1/node-with-metrics/compare/v1.2.0...v1.3.0) (2020-11-30)
