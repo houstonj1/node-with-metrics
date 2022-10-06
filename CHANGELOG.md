@@ -1,3 +1,5 @@
+## [1.3.5](https://github.com/houstonj1/node-with-metrics/compare/v1.3.4...v1.3.5) (2022-10-06)
+
 ## [1.3.4](https://github.com/houstonj1/node-with-metrics/compare/v1.3.3...v1.3.4) (2020-11-30)
 
 ## [1.3.3](https://github.com/houstonj1/node-with-metrics/compare/v1.3.2...v1.3.3) (2020-11-30)
