@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/houstonj1/node-with-metrics/compare/v1.3.5...v1.4.0) (2022-10-06)
+
+
+### Features
+
+* **ci:** add additional semantic-release config ([#2](https://github.com/houstonj1/node-with-metrics/issues/2)) ([9697a4b](https://github.com/houstonj1/node-with-metrics/commit/9697a4b9c6828c0e70c0593a45401f5a70fc0101))
+
 ## [1.3.5](https://github.com/houstonj1/node-with-metrics/compare/v1.3.4...v1.3.5) (2022-10-06)
 
 ## [1.3.4](https://github.com/houstonj1/node-with-metrics/compare/v1.3.3...v1.3.4) (2020-11-30)
