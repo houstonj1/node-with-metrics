@@ -12,9 +12,9 @@ app.get('/version', (req, res) => {
     end({ route: req.url, code: res.statusCode, method: req.method })
 })
 
-app.get('/metrics', (req, res) => {
+app.get('/metrics', async (req, res) => {
     const end = httpRequestDurationMicroseconds.startTimer()
-    res.status(200).end(register.metrics())
+    res.status(200).end(await register.metrics())
     end({ route: req.url, code: res.statusCode, method: req.method })
 })
 
