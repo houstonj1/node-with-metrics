@@ -1,12 +1,14 @@
-name: PRs
-
 on:
+  push:
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
-    name: Test
+    name: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
