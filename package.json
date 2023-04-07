@@ -4,21 +4,21 @@
   "description": "Node with Metrics",
   "main": "index.js",
   "repository": "https://github.com/houstonj1/node-with-metrics",
-  "author": "James Houston <houston.jimmy2@gmail.com>",
+  "author": "James Houston <james@houston.dev>",
   "license": "MIT",
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "jest": "^29.1.2",
-    "nodemon": "^2.0.6",
-    "semantic-release": "^19.0.5",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "semantic-release": "^21.0.1",
     "semantic-release-docker": "^2.2.0",
-    "supertest": "^6.0.1"
+    "supertest": "^6.3.3"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "prom-client": "^14.1.0"
+    "express": "^4.18.2",
+    "prom-client": "^14.2.0"
   },
   "scripts": {
     "start": "node index.js",
