@@ -1,3 +1,5 @@
+name: PR Tests
+
 on:
   push:
     branches:
