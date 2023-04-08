@@ -1,3 +1,11 @@
+## [1.4.2](https://github.com/houstonj1/node-with-metrics/compare/v1.4.1...v1.4.2) (2023-04-08)
+
+
+### Bug Fixes
+
+* **ci:** fix docker workflow syntax ([#4](https://github.com/houstonj1/node-with-metrics/issues/4)) ([40c6c9e](https://github.com/houstonj1/node-with-metrics/commit/40c6c9ecfe3cb25d35feaa536ca4332c1ca41b92))
+* **ci:** use gha expansion in docker tags ([#5](https://github.com/houstonj1/node-with-metrics/issues/5)) ([b0628d4](https://github.com/houstonj1/node-with-metrics/commit/b0628d4c42223b3ad35ee1abccb29836b4384f49))
+
 ## [1.4.1](https://github.com/houstonj1/node-with-metrics/compare/v1.4.0...v1.4.1) (2023-04-07)
 
 # [1.4.0](https://github.com/houstonj1/node-with-metrics/compare/v1.3.5...v1.4.0) (2022-10-06)
