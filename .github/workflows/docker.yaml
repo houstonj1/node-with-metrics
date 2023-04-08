@@ -15,7 +15,8 @@ jobs:
     name: set docker tag
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - id: tag
+        run: |
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
 
           [[ "${{ github.ref }}" == "refs/tags/"* ]] && TAG=$(echo $VERSION | sed -e 's/^v//')
