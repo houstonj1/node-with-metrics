@@ -54,6 +54,6 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: $IMAGE_NAME:$TAG
+          tags: ${{env.IMAGE_NAME}}:${{needs.tag.outputs.tag}}
 
 
