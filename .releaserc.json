@@ -30,23 +30,15 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
-      "@semantic-release/npm", {
+      "@semantic-release/npm",
+      {
         "npmPublish": false
       }
     ],
     "@semantic-release/github",
     [
-      "@semantic-release/exec", {
-        "prepareCmd": "docker pull houstonj1/node-with-metrics:latest && docker build --pull --cache-from houstonj1/node-with-metrics:latest -t houstonj1/node-with-metrics ."
-      }
-    ],
-    [
-      "semantic-release-docker", {
-        "name": "houstonj1/node-with-metrics"
-      }
-    ],
-    [
-      "@semantic-release/git", {
+      "@semantic-release/git",
+      {
         "assets": [
           "package.json",
           "yarn.lock",
@@ -56,5 +48,7 @@
       }
     ]
   ],
-  "branches": ["main"]
+  "branches": [
+    "main"
+  ]
 }
