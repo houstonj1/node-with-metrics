@@ -1,4 +1,4 @@
-name: Test
+name: Lint
 
 on:
   pull_request:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: test
+  lint:
+    name: lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,5 +18,8 @@ jobs:
           node-version: "18"
       - name: Install Dependencies
         run: yarn install --immutable
-      - name: Run Tests
-        run: yarn test
+      - name: Run linters
+        uses: wearerequired/lint-action@v1
+        with:
+          eslint: true
+          prettier: true
