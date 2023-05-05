@@ -2,9 +2,11 @@
 
 A simple Nodejs service exposing Prometheus metrics  
 <br>
+
 ## Local Setup
 
 Requirements:
+
 - Nodejs
 - Yarn
 
