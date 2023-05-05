@@ -1,9 +1,6 @@
-name: PR Tests
+name: Test
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -20,6 +17,6 @@ jobs:
         with:
           node-version: '18'
       - name: Install Dependencies
-        run: yarn install
+        run: yarn install --immutable
       - name: Run Tests
         run: yarn test
