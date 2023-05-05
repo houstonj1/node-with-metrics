@@ -19,7 +19,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install --immutable
       - name: Run linters
-        uses: wearerequired/lint-action@v1
+        uses: wearerequired/lint-action@v2
         with:
           eslint: true
           prettier: true
