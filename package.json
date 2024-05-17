@@ -6,6 +6,7 @@
   "repository": "https://github.com/houstonj1/node-with-metrics",
   "author": "James Houston <james@houston.dev>",
   "license": "MIT",
+  "packageManager": "yarn@4.2.2",
   "scripts": {
     "lint": "eslint index.js src/**/*.js --fix && prettier --write .",
     "lint:ci": "eslint index.js src/**/*.js --fix && prettier --check .",
