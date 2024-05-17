@@ -18,8 +18,5 @@ jobs:
           node-version: "20"
       - name: Install Dependencies
         run: yarn install --immutable
-      - name: Run linters
-        uses: wearerequired/lint-action@548d8a7c4b04d3553d32ed5b6e91eb171e10e7bb # v2.3.0
-        with:
-          eslint: true
-          prettier: true
+      - name: Lint
+        run: yarn lint:ci

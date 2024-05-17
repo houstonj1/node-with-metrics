@@ -7,7 +7,8 @@
   "author": "James Houston <james@houston.dev>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint index.js src/**/*.js --fix",
+    "lint": "eslint index.js src/**/*.js --fix && prettier --write .",
+    "lint:ci": "eslint index.js src/**/*.js --fix && prettier --check .",
     "start": "node index.js",
     "start:dev": "nodemon --watch src index.js",
     "test": "jest"
