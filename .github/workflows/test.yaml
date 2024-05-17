@@ -17,6 +17,6 @@ jobs:
         with:
           node-version: "20"
       - name: Install Dependencies
-        run: yarn install --immutable
+        run: yarn install --immutable --immutable-cache --check-cache
       - name: Run Tests
         run: yarn test

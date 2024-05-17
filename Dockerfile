@@ -2,9 +2,13 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
+ARG YARN_VERSION="4.2.2"
 
-RUN yarn install --silent --ignore-optional
+COPY package.json yarn.lock .yarnrc.yml  ./
+
+RUN corepack enable \
+  && corepack use yarn@${YARN_VERSION} \
+  && yarn install --immutable --immutable-cache --check-cache
 
 COPY index.js .
 COPY src src
