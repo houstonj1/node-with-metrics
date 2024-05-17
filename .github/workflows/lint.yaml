@@ -19,6 +19,6 @@ jobs:
         with:
           node-version: "20"
       - name: Install Dependencies
-        run: yarn install --immutable --immutable-cache --check-cache
+        run: yarn install --immutable
       - name: Lint
         run: yarn lint:ci
