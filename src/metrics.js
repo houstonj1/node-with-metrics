@@ -1,4 +1,4 @@
-const client = require("prom-client")
+import client from "prom-client"
 
 const register = new client.Registry()
 const labels = { application: "node-with-metrics" }
@@ -14,7 +14,4 @@ const httpRequestDurationMicroseconds = new client.Histogram({
 
 register.registerMetric(httpRequestDurationMicroseconds)
 
-module.exports = {
-  httpRequestDurationMicroseconds,
-  register,
-}
+export { httpRequestDurationMicroseconds, register }
