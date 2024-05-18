@@ -1,7 +1,8 @@
-const request = require("supertest")
-const app = require("../app")
+import { readFileSync } from "fs"
+import request from "supertest"
+import app from "../app"
 
-const VERSION = require("../../package.json").version
+const version = JSON.parse(readFileSync("./package.json")).version || "none"
 
 describe("/version", () => {
   test("It should respond with a 200", async () => {
@@ -11,7 +12,7 @@ describe("/version", () => {
 
   test("It should respond with the correct package version", async () => {
     const response = await request(app).get("/version")
-    expect(response.body.version).toBe(VERSION)
+    expect(response.body.version).toBe(version)
   })
 })
 
