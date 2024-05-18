@@ -1,6 +1,7 @@
 import globals from "globals"
 import js from "@eslint/js"
 import prettier from "eslint-config-prettier"
+import teslint from "typescript-eslint"
 
 export default [
   {
@@ -9,8 +10,6 @@ export default [
 
       globals: {
         ...globals.node,
-        ...globals.commonjs,
-        ...globals.es2021,
         ...globals.jest,
       },
       sourceType: "module",
@@ -19,4 +18,5 @@ export default [
   },
   js.configs.recommended,
   prettier,
+  ...teslint.configs.strict,
 ]

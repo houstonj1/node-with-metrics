@@ -1,8 +1,9 @@
 import { readFileSync } from "fs"
 import request from "supertest"
-import app from "../app"
+import app from "../app.js"
 
-const version = JSON.parse(readFileSync("./package.json")).version || "none"
+const version =
+  JSON.parse(readFileSync("./package.json").toString()).version || "none"
 
 describe("/version", () => {
   test("It should respond with a 200", async () => {

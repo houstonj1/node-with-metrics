@@ -1,9 +1,10 @@
 import { readFileSync } from "fs"
-import express from "express"
+import express, { Express } from "express"
 import { httpRequestDurationMicroseconds, register } from "./metrics.js"
 
-const app = express()
-const version = JSON.parse(readFileSync("./package.json")).version || "none"
+const app: Express = express()
+const version =
+  JSON.parse(readFileSync("./package.json").toString()).version || "none"
 
 app.get("/version", (req, res) => {
   const end = httpRequestDurationMicroseconds.startTimer()
