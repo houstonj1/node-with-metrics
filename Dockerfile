@@ -1,6 +1,6 @@
-FROM node:20-alpine
+FROM node:20-alpine as builder
 
-WORKDIR /app
+WORKDIR /opt
 
 ARG YARN_VERSION="4.2.2"
 
@@ -10,9 +10,20 @@ RUN corepack enable \
   && corepack use yarn@${YARN_VERSION} \
   && yarn install --immutable --immutable-cache --check-cache
 
-COPY index.js .
+COPY tsconfig.json .
 COPY src src
+
+RUN yarn build
+RUN yarn workspaces focus --production
+
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY --from=builder /opt/package.json /opt/yarn.lock ./
+COPY --from=builder /opt/node_modules node_modules
+COPY --from=builder /opt/dist dist
 
 USER node
 
-CMD ["node", "index.js"]
+CMD ["node", "dist/index.js"]
