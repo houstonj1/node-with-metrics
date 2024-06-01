@@ -1,4 +1,4 @@
-FROM node:20-alpine as builder
+FROM node:22-alpine as builder
 
 WORKDIR /opt
 
@@ -16,7 +16,7 @@ COPY src src
 RUN yarn build
 RUN yarn workspaces focus --production
 
-FROM node:20-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 
