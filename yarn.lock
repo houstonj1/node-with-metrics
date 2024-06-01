@@ -4188,7 +4188,7 @@ __metadata:
     express: "npm:^4.19.2"
     globals: "npm:^15.2.0"
     jest: "npm:^29.6.1"
-    nodemon: "npm:^3.1.0"
+    nodemon: "npm:^3.1.2"
     prettier: "npm:^3.2.5"
     prom-client: "npm:^15.1.2"
     supertest: "npm:^7.0.0"
@@ -4199,9 +4199,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"nodemon@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "nodemon@npm:3.1.0"
+"nodemon@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "nodemon@npm:3.1.2"
   dependencies:
     chokidar: "npm:^3.5.2"
     debug: "npm:^4"
@@ -4215,7 +4215,7 @@ __metadata:
     undefsafe: "npm:^2.0.5"
   bin:
     nodemon: bin/nodemon.js
-  checksum: 10c0/3aeb50105ecae31ce4d0a5cd464011d4aa0dc15419e39ac0fd203d784e38940e1436f4ed96adbaa0f9614ee0644f91e3cf38f2afae8d3918ae7afc51c7e2116b
+  checksum: 10c0/7a091067d766768fb6660b796194b01748bba5dc3f1e3ed3dd5f804bfa305e207d24635755078ee5e7cc53848cea35204901e0a6e51ac64483bb8e9ecb237c95
   languageName: node
   linkType: hard
 
