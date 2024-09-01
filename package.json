@@ -32,7 +32,7 @@
     "globals": "^15.8.0",
     "jest": "^29.6.1",
     "nodemon": "^3.1.4",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.3",
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
