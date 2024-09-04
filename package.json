@@ -6,7 +6,7 @@
   "repository": "https://github.com/houstonj1/node-with-metrics",
   "author": "James Houston <james@houston.dev>",
   "license": "MIT",
-  "packageManager": "yarn@4.2.2",
+  "packageManager": "yarn@4.4.1",
   "type": "module",
   "scripts": {
     "build": "tsc",

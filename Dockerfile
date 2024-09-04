@@ -1,8 +1,8 @@
-FROM node:22-alpine as builder
+FROM node:22-alpine AS builder
 
 WORKDIR /opt
 
-ARG YARN_VERSION="4.2.2"
+ARG YARN_VERSION="4.4.1"
 
 COPY package.json yarn.lock .yarnrc.yml  ./
 
