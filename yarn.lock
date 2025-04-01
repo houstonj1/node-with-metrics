@@ -511,17 +511,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.23.0":
+"@eslint/js@npm:9.23.0, @eslint/js@npm:^9.23.0":
   version: 9.23.0
   resolution: "@eslint/js@npm:9.23.0"
   checksum: 10c0/4e70869372b6325389e0ab51cac6d3062689807d1cef2c3434857571422ce11dde3c62777af85c382b9f94d937127598d605d2086787f08611351bf99faded81
-  languageName: node
-  linkType: hard
-
-"@eslint/js@npm:^9.21.0":
-  version: 9.21.0
-  resolution: "@eslint/js@npm:9.21.0"
-  checksum: 10c0/86c24a2668808995037e3f40c758335df2ae277c553ac0cf84381a1a8698f3099d8a22dd9c388947e6b7f93fcc1142f62406072faaa2b83c43ca79993fc01bb3
   languageName: node
   linkType: hard
 
@@ -4367,7 +4360,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "node-with-metrics@workspace:."
   dependencies:
-    "@eslint/js": "npm:^9.21.0"
+    "@eslint/js": "npm:^9.23.0"
     "@types/express": "npm:^5.0.0"
     "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.13.8"
