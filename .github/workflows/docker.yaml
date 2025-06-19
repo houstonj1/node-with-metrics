@@ -30,5 +30,7 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/arm64
+          provenance: mode=max
           push: true
+          sbom: true
           tags: ${{ steps.meta.outputs.tags }}
