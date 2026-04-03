@@ -5,7 +5,7 @@ export default {
   preset: "ts-jest",
   testEnvironment: "node",
   transform: {
-    "\\.[jt]s?$": ["ts-jest", { useESM: true }],
+    "\\.[jt]s?$": ["ts-jest", { useESM: true, tsconfig: "tsconfig.test.json" }],
   },
   moduleNameMapper: {
     "^(\\.{1,2}/.*)\\.[jt]s$": "$1",
