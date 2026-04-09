@@ -15,6 +15,8 @@ RUN yarn workspaces focus --production
 
 FROM node:24-alpine
 
+RUN apk upgrade --no-cache
+
 RUN rm -rf /usr/local/lib/node_modules/npm \
   /usr/local/lib/node_modules/corepack \
   /usr/local/bin/npm \
@@ -29,4 +31,4 @@ COPY --from=builder /opt/dist dist
 
 USER node
 
-CMD ["node", "dist/index.js"]
+CMD ["node", "--import", "./dist/tracing.js", "dist/index.js"]
