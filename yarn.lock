@@ -1443,7 +1443,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/core@npm:2.6.1, @opentelemetry/core@npm:^2.0.0":
+"@opentelemetry/core@npm:2.6.1, @opentelemetry/core@npm:^2.0.0, @opentelemetry/core@npm:^2.6.1":
   version: 2.6.1
   resolution: "@opentelemetry/core@npm:2.6.1"
   dependencies:
@@ -6294,6 +6294,7 @@ __metadata:
     "@eslint/js": "npm:^10.0.1"
     "@opentelemetry/api": "npm:^1.9.1"
     "@opentelemetry/auto-instrumentations-node": "npm:^0.72.0"
+    "@opentelemetry/core": "npm:^2.6.1"
     "@opentelemetry/exporter-trace-otlp-http": "npm:^0.214.0"
     "@opentelemetry/resources": "npm:^2.6.1"
     "@opentelemetry/sdk-node": "npm:^0.214.0"
