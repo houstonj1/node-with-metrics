@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 5s
+  scrape_protocols: ["OpenMetricsText1.0.0", "PrometheusProto"]
+
+scrape_configs:
+  - job_name: "node-with-metrics"
+    metrics_path: /metrics
+    honor_labels: true
+    static_configs:
+      - targets: ["app:3000"]
+        labels:
+          application: "node-with-metrics"
