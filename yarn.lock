@@ -1385,7 +1385,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/exporter-trace-otlp-http@npm:0.217.0, @opentelemetry/exporter-trace-otlp-http@npm:^0.217.0":
+"@opentelemetry/exporter-trace-otlp-http@npm:0.217.0":
   version: 0.217.0
   resolution: "@opentelemetry/exporter-trace-otlp-http@npm:0.217.0"
   dependencies:
@@ -1400,7 +1400,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@opentelemetry/exporter-trace-otlp-http@npm:0.218.0":
+"@opentelemetry/exporter-trace-otlp-http@npm:0.218.0, @opentelemetry/exporter-trace-otlp-http@npm:^0.218.0":
   version: 0.218.0
   resolution: "@opentelemetry/exporter-trace-otlp-http@npm:0.218.0"
   dependencies:
@@ -5928,7 +5928,7 @@ __metadata:
     "@opentelemetry/api": "npm:^1.9.1"
     "@opentelemetry/auto-instrumentations-node": "npm:^0.75.0"
     "@opentelemetry/core": "npm:^2.7.1"
-    "@opentelemetry/exporter-trace-otlp-http": "npm:^0.217.0"
+    "@opentelemetry/exporter-trace-otlp-http": "npm:^0.218.0"
     "@opentelemetry/resources": "npm:^2.7.1"
     "@opentelemetry/sdk-node": "npm:^0.218.0"
     "@opentelemetry/semantic-conventions": "npm:^1.41.1"
