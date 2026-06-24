@@ -7,9 +7,36 @@ updates:
       interval: "monthly"
     commit-message:
       prefix: "chore(deps)"
+    groups:
+      opentelemetry:
+        patterns:
+          - "@opentelemetry/*"
+      eslint:
+        patterns:
+          - "eslint"
+          - "eslint-*"
+          - "@eslint/*"
+          - "typescript-eslint"
+          - "globals"
+      jest:
+        patterns:
+          - "jest"
+          - "@jest/*"
+          - "jest-*"
+          - "ts-jest"
+          - "@types/jest"
+      types:
+        patterns:
+          - "@types/*"
+        exclude-patterns:
+          - "@types/jest"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
     commit-message:
       prefix: "chore(deps)"
+    groups:
+      actions:
+        patterns:
+          - "*"
