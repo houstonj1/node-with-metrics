@@ -1,6 +1,6 @@
 {
   "name": "node-with-metrics",
-  "version": "1.11.4",
+  "version": "1.11.5",
   "description": "Node with Metrics",
   "exports": "./dist/index.js",
   "repository": "https://github.com/houstonj1/node-with-metrics",
