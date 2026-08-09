@@ -1,4 +1,9 @@
-import express, { Express, Request, Response, NextFunction } from "express"
+import express, {
+  type Express,
+  type Request,
+  type Response,
+  type NextFunction,
+} from "express"
 import {
   getTraceExemplar,
   httpRequestDuration,
@@ -8,7 +13,7 @@ import {
   itemsProcessed,
   register,
   version,
-} from "./metrics.js"
+} from "./metrics.ts"
 
 const app: Express = express()
 
