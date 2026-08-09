@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "dev": "nodemon --exec node --no-warnings=ExperimentalWarning --import ./src/tracing.ts --loader ts-node/esm src/index.ts",
+    "dev": "nodemon --exec node --import ./src/tracing.ts src/index.ts",
     "lint": "eslint src/**/*.ts --fix && prettier --write .",
     "lint:ci": "eslint src/**/*.ts --fix && prettier --check .",
     "start": "node --import ./dist/tracing.js dist/index.js",
@@ -19,19 +19,17 @@
   },
   "dependencies": {
     "@opentelemetry/api": "^1.9.1",
-    "@opentelemetry/auto-instrumentations-node": "^0.77.0",
-    "@opentelemetry/core": "^2.8.0",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.219.0",
-    "@opentelemetry/resources": "^2.8.0",
-    "@opentelemetry/sdk-node": "^0.219.0",
-    "@opentelemetry/semantic-conventions": "^1.41.1",
+    "@opentelemetry/auto-instrumentations-node": "^0.79.0",
+    "@opentelemetry/core": "^2.10.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.221.0",
+    "@opentelemetry/resources": "^2.10.0",
+    "@opentelemetry/sdk-node": "^0.221.0",
+    "@opentelemetry/semantic-conventions": "^1.43.0",
     "express": "^5.2.1",
     "prom-client": "^15.1.3"
   },
   "resolutions": {
-    "tar": "7.5.16",
-    "@opentelemetry/core": "2.8.0",
-    "js-yaml@npm:^3.13.1": "4.2.0",
+    "tar": "7.5.21",
     "test-exclude@npm:^6.0.0": "7.0.1",
     "glob": "13.0.6"
   },
@@ -39,18 +37,17 @@
     "@eslint/js": "^10.0.1",
     "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.9.2",
-    "@types/supertest": "^7.2.0",
-    "eslint": "^10.5.0",
+    "@types/node": "^26.2.0",
+    "@types/supertest": "^7.2.1",
+    "eslint": "^10.8.1",
     "eslint-config-prettier": "^10.1.8",
-    "globals": "^17.7.0",
+    "globals": "^17.9.0",
     "jest": "^30.4.2",
     "nodemon": "^3.1.14",
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.6",
     "supertest": "^7.2.2",
-    "ts-jest": "^29.4.11",
-    "ts-node": "^10.9.2",
+    "ts-jest": "^29.4.12",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.62.0"
+    "typescript-eslint": "^8.66.0"
   }
 }

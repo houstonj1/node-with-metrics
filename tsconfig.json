@@ -3,7 +3,10 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "allowJs": false,
+    "allowImportingTsExtensions": true,
     "alwaysStrict": true,
+    "erasableSyntaxOnly": true,
+    "rewriteRelativeImportExtensions": true,
     "esModuleInterop": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
@@ -11,13 +14,9 @@
     "noImplicitThis": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "verbatimModuleSyntax": true
   },
   "exclude": ["src/tests"],
-  "include": ["src/**/*"],
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node",
-    "transpileOnly": true
-  }
+  "include": ["src/**/*"]
 }

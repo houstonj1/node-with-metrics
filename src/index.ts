@@ -1,4 +1,4 @@
-import app, { setReady } from "./app.js"
+import app, { setReady } from "./app.ts"
 
 const PORT = process.env.PORT || 3000
 

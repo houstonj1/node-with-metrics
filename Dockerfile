@@ -1,10 +1,11 @@
-FROM node:24-alpine AS builder
+FROM node:26-alpine AS builder
 
 WORKDIR /opt
 
 COPY package.json yarn.lock .yarnrc.yml  ./
 
-RUN corepack enable \
+RUN npm install -g corepack \
+  && corepack enable \
   && yarn install --immutable
 
 COPY tsconfig.json .
@@ -13,7 +14,7 @@ COPY src src
 RUN yarn build
 RUN yarn workspaces focus --production
 
-FROM node:24-alpine
+FROM node:26-alpine
 
 RUN apk upgrade --no-cache
 

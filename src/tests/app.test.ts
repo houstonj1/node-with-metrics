@@ -1,6 +1,6 @@
 import { readFileSync } from "fs"
 import request from "supertest"
-import app, { setReady } from "../app.js"
+import app, { setReady } from "../app.ts"
 
 const version =
   JSON.parse(readFileSync("./package.json").toString()).version || "none"
