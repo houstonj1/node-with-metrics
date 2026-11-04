@@ -1,5 +1,5 @@
 import { readFileSync } from "fs"
-import client from "prom-client"
+import client from "@prometheus-io/client"
 import { trace } from "@opentelemetry/api"
 
 const register = new client.Registry<client.RegistryContentType>()

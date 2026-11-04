@@ -13,7 +13,7 @@ yarn dev
 
 ## What's instrumented
 
-**Prometheus metrics** (via prom-client, hand-crafted):
+**Prometheus metrics** (via [@prometheus-io/client](https://github.com/prometheus/client_js), hand-crafted):
 
 - `http_request_duration_seconds` — histogram with trace ID exemplars
 - `http_requests_total` — counter by method, route, status code
